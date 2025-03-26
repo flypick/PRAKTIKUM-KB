@@ -31,7 +31,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# task_operations.py
 
 tasks = [] 
 
