@@ -1,0 +1,36 @@
+Task Manager - Sistem Manajemen Tugas
+
+Deskripsi
+Program ini adalah sistem manajemen tugas sederhana berbasis terminal yang memungkinkan pengguna untuk:
+  Menambahkan tugas dengan ID unik dan timestamp.
+  Melihat daftar tugas yang telah disimpan.
+  Menghapus tugas berdasarkan ID.
+  Menggunakan menu interaktif untuk navigasi.
+
+penjelasan codingan
+
+random → Untuk menghasilkan ID unik secara acak.
+datetime → Untuk mencatat waktu saat tugas ditambahkan.
+task_operations → Mengimpor fungsi-fungsi dari file lain untuk manajemen tugas.
+Menggunakan perulangan while True agar menu selalu muncul sampai pengguna memilih keluar.
+Menampilkan pilihan menu kepada pengguna.
+Pilihan 1: Meminta input nama tugas dan memanggil fungsi add_task().
+Pilihan 2: Memanggil fungsi view_tasks() untuk menampilkan tugas yang ada.
+Pilihan 3: Meminta ID tugas yang akan dihapus.
+Menggunakan try-except untuk menangani kesalahan jika input bukan angka.
+Memanggil fungsi remove_task().
+Pilihan 4: Keluar dari program dengan break.
+Jika input tidak valid, akan muncul pesan error.
+Menggunakan List untuk menyimpan semua tugas.
+Setiap tugas akan disimpan sebagai Dictionary dalam list ini.
+Membuat dictionary untuk menyimpan ID, nama tugas, dan timestamp.
+ID tugas dibuat secara acak dengan random.randint(1000, 9999).
+Waktu pencatatan menggunakan datetime.now().strftime("%Y-%m-%d %H:%M:%S").
+Menambahkan tugas ke dalam list tasks[].
+Jika tidak ada tugas, tampilkan pesan "Belum ada tugas".
+Jika ada tugas, tampilkan daftar tugas dalam format yang rapi.
+Mencari tugas berdasarkan ID dalam list tasks[].
+Jika ditemukan, tugas akan dihapus dari list.
+Jika tidak ditemukan, tampilkan pesan "Tugas tidak ditemukan".
+
+
